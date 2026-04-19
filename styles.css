@@ -1,0 +1,19 @@
+.apple-btn {
+  background: #2563eb;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.google-btn {
+  background: #ea4335;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.apple-btn:hover {
+  background: #1d4ed8;
+}
+
+.google-btn:hover {
+  background: #c53030;
+}

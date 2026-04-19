@@ -1,0 +1,39 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.yourdomain.digitalwallet",
+  "serialNumber": "DW-123456",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "Amber Lewis",
+  "description": "Digital Wallet Badge",
+  "logoText": "Digital Wallet",
+  "foregroundColor": "rgb(255,255,255)",
+  "backgroundColor": "rgb(75,63,227)",
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://yourdomain.com/verify?badgeId=cred-1234abcd",
+    "messageEncoding": "iso-8859-1"
+  },
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "badge",
+        "label": "Badge",
+        "value": "Wellness Achievement"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "issued",
+        "label": "Issued",
+        "value": "2026-04-17"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "id",
+        "label": "Credential ID",
+        "value": "cred-1234abcd"
+      }
+    ]
+  }
+}

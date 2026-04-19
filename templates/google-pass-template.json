@@ -1,0 +1,28 @@
+{
+  "id": "digitalwallet.badge.1234",
+  "classId": "digitalwallet.badge.class",
+  "issuerName": "Amber Lewis",
+  "title": "Digital Wallet Badge",
+  "subtitle": "Credential",
+  "header": "Digital Wallet",
+  "hexBackgroundColor": "#4B3FE3",
+  "heroImage": {
+    "sourceUri": {
+      "uri": "https://yourdomain.com/assets/header.png"
+    }
+  },
+  "barcode": {
+    "type": "QR_CODE",
+    "value": "https://yourdomain.com/verify?badgeId=cred-1234abcd"
+  },
+  "textModulesData": [
+    {
+      "header": "Badge",
+      "body": "Wellness Achievement"
+    },
+    {
+      "header": "Credential ID",
+      "body": "cred-1234abcd"
+    }
+  ]
+}
