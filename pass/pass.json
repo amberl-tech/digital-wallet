@@ -1,0 +1,56 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.amber.wellness",
+  "serialNumber": "cred-123456",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "Amber Lewis",
+  "description": "Amber Wellness Badge",
+  "logoText": "Amber Wellness Badge",
+  "foregroundColor": "rgb(255,255,255)",
+  "backgroundColor": "rgb(60,0,120)",
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "cred-123456",
+    "messageEncoding": "iso-8859-1"
+  },
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "badge",
+        "label": "Badge",
+        "value": "Wellness Streak"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "desc",
+        "label": "Description",
+        "value": "7 days in a row"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "issued",
+        "label": "Issued",
+        "value": "2026-04-19"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "name",
+        "label": "Issued To",
+        "value": "Amber Lewis"
+      },
+      {
+        "key": "email",
+        "label": "Email",
+        "value": "amber@example.com"
+      },
+      {
+        "key": "userid",
+        "label": "User ID",
+        "value": "user-k1a9511n"
+      }
+    ]
+  }
+}
