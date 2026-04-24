@@ -1,8 +1,0 @@
-{
-  "pass.json": "SHA1_OF_PASS_JSON",
-  "icon.png": "SHA1_OF_ICON_PNG",
-  "icon@2x.png": "SHA1_OF_ICON_2X_PNG",
-  "background.png": "SHA1_OF_BACKGROUND_PNG",
-  "background@2x.png": "SHA1_OF_BACKGROUND_2X_PNG",
-  "qr.png": "SHA1_OF_QR_PNG"
-}
