@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber's Digital Wallet</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional: Styling for Apple/Google Wallet buttons -->
+  <style>
+    .apple-btn, .google-btn {
+      display: block;
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .apple-btn {
+      background: #2563eb;
+      color: white;
+    }
+
+    .google-btn {
+      background: #ea4335;
+      color: white;
+    }
+
+    .apple-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .google-btn:hover {
+      background: #c53030;
+    }
+
+    .wallet-buttons {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+  
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Amber's Digital Wallet</h1>
+    <p>Identity • Badges • Credentials</p>
+  </header>
+
+  <main>
+    <section id="profile">
+      <h2>My Profile</h2>
+      <div class="card">
+        <p><strong>Name:</strong> <span id="profile-name">Amber Lewis</span></p>
+        <p><strong>Email:</strong> <span id="profile-email">amber@example.com</span></p>
+        <p><strong>User ID:</strong> <span id="profile-id"></span></p>
+      </div>
+    </section>
+
+    <section id="badges">
+      <h2>My Badges</h2>
+
+      <!-- Amber Wellness Badge -->
+      <div class="card">
+        <p><strong>Amber Wellness Badge</strong></p>
+        <p>Wellness Achievement credential — add it directly to your mobile wallet.</p>
+        <div class="wallet-buttons">
+          <a href="https://api.trybadge.com/download?id=2929766e-15f2-4a74-884f-e1fd29242085&token=2SI0hkjaWUe6HW6zgqamPQurPKQOq6YU" target="_blank">
+            <img class="wallet-badge-img"
+                 src="https://developer.apple.com/wallet/images/add-to-apple-wallet.svg"
+                 alt="Add to Apple Wallet">
+          </a>
+          <a href="https://api.trybadge.com/download?id=2929766e-15f2-4a74-884f-e1fd29242085&token=2SI0hkjaWUe6HW6zgqamPQurPKQOq6YU" target="_blank">
+            <img class="wallet-badge-img"
+                 src="https://developers.google.com/static/wallet/images/save-to-google-wallet-button.svg"
+                 alt="Add to Google Wallet">
+          </a>
+        </div>
+      </div>
+
+      <div id="badge-list" class="grid"></div>
+    </section>
+
+    <section id="issue-badge">
+      <h2>Issue New Badge</h2>
+      <div class="card">
+        <label>
+          Badge Name:
+          <input type="text" id="badge-name" placeholder="e.g. Wellness Streak 7 Days" />
+        </label>
+        <label>
+          Description:
+          <input type="text" id="badge-desc" placeholder="Short description" />
+        </label>
+        <button id="issue-btn">Issue Badge</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prototype digital wallet • Built in VS Code</p>
+  </footer>
+
+ <script src="app.js?v=4"></script>
+</body>
+</html>
