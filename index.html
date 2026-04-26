@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber's Digital Wallet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Amber's Digital Wallet</h1>
+    <p>Identity • Badges • Credentials</p>
+  </header>
+
+  <!-- ⭐ LOGIN PANEL (always visible) -->
+  <section id="auth-panel">
+    <div class="card">
+      <h3>Account</h3>
+      <p id="auth-status">Not signed in</p>
+
+      <button id="login-btn">Log In</button>
+      <button id="logout-btn" style="display:none;">Log Out</button>
+    </div>
+  </section>
+
+  <main>
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <h2>My Profile</h2>
+      <div class="card">
+        <p><strong>Name:</strong> <span id="profile-name">Amber Lewis</span></p>
+        <p><strong>Email:</strong> <span id="profile-email">amber@example.com</span></p>
+        <p><strong>User ID:</strong> <span id="profile-id">Not signed in</span></p>
+      </div>
+    </section>
+
+    <!-- BADGES SECTION -->
+    <section id="badges">
+      <h2>My Badges</h2>
+      <div id="badge-list" class="grid"></div>
+    </section>
+
+    <!-- ISSUE NEW BADGE -->
+    <section id="issue-badge">
+      <h2>Issue New Badge</h2>
+      <div class="card">
+        <label>
+          Badge Name:
+          <input type="text" id="badge-name" placeholder="e.g. Wellness Streak 7 Days" />
+        </label>
+        <label>
+          Description:
+          <input type="text" id="badge-desc" placeholder="Short description" />
+        </label>
+        <button id="issue-btn">Issue Badge</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prototype digital wallet • Built in VS Code</p>
+  </footer>
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- App -->
+  <script src="app.js?v=8"></script>
+
+</body>
+</html>
