@@ -1,0 +1,47 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.amber.badge2027",
+  "serialNumber": "DW-123456",
+  "teamIdentifier": "W92MX6HZ6Z",
+  "organizationName": "Amber Lewis",
+  "description": "Digital Wallet Badge",
+  "logoText": "Digital Wallet",
+
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(255,230,255)",
+  "backgroundColor": "rgb(193,178,255)",
+
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://amberl-tech.github.io/digital-wallet/",
+    "messageEncoding": "iso-8859-1"
+  },
+
+  "images": {
+    "strip": "strip.png"
+  },
+
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "badge",
+        "label": "Badge",
+        "value": "Wellness Achievement"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "issued",
+        "label": "Issued",
+        "value": "2026-04-17"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "id",
+        "label": "Credential ID",
+        "value": "cred-1234abcd"
+      }
+    ]
+  }
+}
