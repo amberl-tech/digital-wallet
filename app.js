@@ -1,10 +1,10 @@
-  /* ---------------------------------------------------------
+/* ---------------------------------------------------------
    SUPABASE CLIENT
 --------------------------------------------------------- */
 
 const supabaseUrl = "https://pcvdsltidnsyzjnlztie.supabase.co";
 
-// ⭐⭐ PASTE YOUR REAL ANON KEY BETWEEN THESE QUOTES ⭐⭐
+// ⭐⭐ YOUR REAL ANON KEY ⭐⭐
 const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBjdmRzbHRpZG5zeXpqbmx6dGllIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcxNTk4MjYsImV4cCI6MjA5MjczNTgyNn0.MOTKV1PiPvRfcCkbbIooKcJYUD9kmadS6UZmh7-h61k";
 
 const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey);
@@ -134,10 +134,13 @@ async function issueBadge(name, description) {
       user_id: wallet.profile.userId,
       name,
       description,
+
+      // ⭐⭐ UPDATED — NO MORE TRYBADGE ⭐⭐
       apple_wallet_url:
-        "https://api.trybadge.com/download?id=2929766e-15f2-4a74-884f-e1fd29242085&token=2SI0hkjaWUe6HW6zgqamPQurPKQOq6YU",
+        "https://pcvdsltidnsyzjnlztie.supabase.co/functions/v1/apple-pass",
+
       google_wallet_url:
-        "https://api.trybadge.com/download?id=2929766e-15f2-4a74-884f-e1fd29242085&token=2SI0hkjaWUe6HW6zgqamPQurPKQOq6YU",
+        "https://pcvdsltidnsyzjnlztie.supabase.co/functions/v1/google-pass",
     });
 
   if (error) {
